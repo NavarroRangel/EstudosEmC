@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (){
-	char nomedoJogador[8];
+	char nomedoJogador[20];
 	int idadeJogador = 23;
 	int quantidadeDeGols = 10;
 	
