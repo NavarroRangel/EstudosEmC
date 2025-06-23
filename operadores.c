@@ -15,10 +15,14 @@ int main (){
 	int resultadoDivisao;
 	resultadoDivisao = num1 / num2;
 	
+	int resultadoModulo;
+	resultadoModulo = num1 % num2;
+	
 	printf("Adicao: %d + %d = %d \n", num1, num2, resultadoSoma );
 	printf("Subtracao: %d - %d = %d \n", num1,num2, resultadoSubtracao );
 	printf("Multiplicacao: %d * %d = %d \n", num1,num2,resultadoMultiplicacao);
 	printf("Divisao: %d / %d = %d \n", num1,num2,resultadoDivisao);
+	printf("Modulo %d %% %d = %d \n", num1,num2,resultadoModulo);
 	
 	return 0;
 }
