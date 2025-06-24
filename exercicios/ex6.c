@@ -15,7 +15,7 @@ int main (){
 		printf("VOCE FOI EXPULSO, SAIA DO CAMPO!");
 		
 	} else {
-		printf("Cuidado Para nao tomar outro");
+		printf("Cuidado Para nao tomar cartao");
 	}
 	
 	return 0;

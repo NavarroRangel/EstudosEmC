@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main (){
 	
@@ -9,7 +10,7 @@ int main (){
 	printf("Digite o menor salario!\n");
 	scanf("%f", &menorSalario);
 	
-	float salariosSubtraidos = maiorSalario - menorSalario;
+	float salariosSubtraidos = fabs(maiorSalario - menorSalario);
 	printf("A diferenca entre os salario de: R$ %.2f", salariosSubtraidos );
 	
 	return 0;
