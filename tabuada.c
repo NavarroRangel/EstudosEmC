@@ -4,7 +4,7 @@ int main(){
 	//LOOp for aninhado!
 	// Fazer uma tabuada
 	for(int i = 0; i <= 10; i++){
-		printf("\n=================================\n");
+		printf("\n=================================\n");s
 		printf("\n\nTabuada do %d \n\n",i);
 		
 		for (int j = 0; j <= 10; j++){
