@@ -7,7 +7,7 @@ int main (){
 	scanf("%d", &dias);
 	
 	for (int i = 0; i < dias; i++){
-		printf("Dia %d ta pago! \n", i);
+		printf("Dia %d ta pago! \n", i + 1);
 	}
 	
 	
