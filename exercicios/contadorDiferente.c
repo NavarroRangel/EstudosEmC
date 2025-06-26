@@ -6,11 +6,11 @@ int main(){
 	scanf("%d",&numeroFinal);
 	
 	int cofre = 0;
-	for(int i = 1; i <= 5 ; i++ ){
+	for(int i = 1; i <= numeroFinal ; i++ ){
 		cofre = cofre + i;
-		printf("%d \n", cofre);
 	
 	}
+	printf("A soma de 1 ate %d e : %d ",numeroFinal, cofre);
 
 	return 0;
 }
