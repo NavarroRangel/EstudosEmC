@@ -1,8 +1,20 @@
 #include <stdio.h>
 #include <string.h>
 
+void contadorDeCacteresProibidos(char nome[]){
+	int contador = 0;
+	char *caracteresProibidos = "!@#$%^&*()_+={}[];:'\"<>,.?/\\|`~";
+	for(int i = 0; nome[i] != '\0'; i++ ){
+		if(strchr(caracteresProibidos,nome[i]) != NULL){
+			contador++;
+		}
+		
+	} 
+	printf("Caracteres proibidos encontrados: %d", contador);
+}
+
 int main(){
-	char nomeJogador[] = "Navarro#\n";
+	char nomeJogador[] = "Navarr!!!!!!#@#!#&#!@";
 	if(strlen(nomeJogador) >50){
 		printf("NOme muito grande!Limite de 50 caracteres \n");
 	} else {
@@ -14,7 +26,8 @@ int main(){
 	char *stringProibida = strpbrk(nomeJogador, caracteresProibidos);
 	
 	if (stringProibida != NULL){
-		printf("Nome proibidio! Caractere encontrado: '%c' \n", *stringProibida);
+		printf("NOME PROIBIDO! ");
+	   contadorDeCacteresProibidos(nomeJogador);
 	} else {
 		printf("Nome Liberado \n");
 	}
