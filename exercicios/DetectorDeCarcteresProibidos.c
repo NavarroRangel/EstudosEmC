@@ -3,7 +3,7 @@
 
 void contadorDeCacteresProibidos(char nome[]){
 	int contador = 0;
-	char *caracteresProibidos = "!@#$%^&*()_+={}[];:'\"<>,.?/\\|`~";
+	char caracteresProibidos = "!@#$%^&*()_+={}[];:'\"<>,.?/\\|`~";
 	for(int i = 0; nome[i] != '\0'; i++ ){
 		if(strchr(caracteresProibidos,nome[i]) != NULL){
 			contador++;
